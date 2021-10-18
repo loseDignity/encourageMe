@@ -11,7 +11,7 @@ function App() {
       if(commentList.length){
         for (let i = 0; i < commentList.length; i++){
           if(commentList[i].innerHTML == '*' + kkk){
-            window.alert("그 말은 이미 했어용♡");
+            window.alert("그 말은 이미 했어용♡\n You've already say that");
             isDup = true;
           }
         }
@@ -40,17 +40,17 @@ function App() {
           <i style={{"textAlign": "left", "color": "grey"}}>하 &lt; &lt;마이네임&gt; &gt; 안보현이랑, 한소희 로맨스에 치인다,,</i>
         </div>
           <input type="text"
-                  placeholder="40자 이내로 용기 좀 주세요😂 Please encourage me (鼓励我)" 
+                  placeholder="40자 이내로 용기 좀 주세요😂 Please encourage me in 40 characters. (鼓励我)" 
                   maxLength='40'
                   style={{"width" : "90%", "height": "10%"}}
                   onChange={ handleChange }  
                   />
           <button type="submit">
-            <i className="fa fa-search" onClick={ getVal }></i>
+            <i className="fa fa-sign-in" onClick={ getVal }></i>
           </button>
-          <div id="inserthere" style={{"textAlign":"left", paddingLeft: 20}}></div>
+          <div id="inserthere" style={{"textAlign":"left", paddingLeft: 80}}></div>
       </div>
-      {/* <footer>내 이메일 : dlosemy@gmail.com</footer> */}
+      <footer>Contact me here - ㅎㅎㅎㅎㅎ  dlosemy@gmail.com</footer>
     </div>
   );
 
